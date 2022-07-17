@@ -6,7 +6,7 @@ import { useTheme } from '@mui/system';
 const Footer = () => {
   const theme = useTheme()
   const width = useMediaQuery(theme.breakpoints.up('md'))
-  const [choseLanguage, setchoseLanguage] = useState('English')
+  const [choseLanguage, setChoseLanguage] = useState('English')
   const [choseCurrency, setChoseCurrency] = useState('TRY')
   const [anchorEl1, setAnchorEl1] = useState(null)
   const open1 = Boolean(anchorEl1)
@@ -122,7 +122,7 @@ const Footer = () => {
                         >
                                 {
                                     footerOptions[4][0][1].map(item => (
-                                        <MenuItem key={Math.random()}>
+                                        <MenuItem disableTouchRipple key={Math.random()} onClick={() => {setChoseLanguage(item);handleClose1()}}>
                                             {item}
                                         </MenuItem>
                                     )) 
@@ -166,7 +166,7 @@ const Footer = () => {
                         >
                                 {
                                     footerOptions[4][1][1].map(item => (
-                                        <MenuItem key={Math.random()}>
+                                        <MenuItem disableTouchRipple key={Math.random()} onClick={() => {setChoseCurrency(item);handleClose2()}}>
                                             {item}
                                         </MenuItem>
                                     )) 
