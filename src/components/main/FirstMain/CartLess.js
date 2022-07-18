@@ -32,7 +32,7 @@ const CartLess = ({data,bgColor}) => {
                           {
                               widthMd
                               &&
-                              <Grid item md={4} sx={{p:'0 15px'}} container alignItems={'center'} justifyContent={'center'}>
+                              <Grid item md={4} sx={{p:'0 15px'}} container alignItems={'center'} flexDirection={'column'} justifyContent={'center'}>
                                   <Typography variant='customH3' textAlign={'center'} sx={{fontSize:[0,0,'25px','32px']}}>
                                       {data.average_tuition}TRY
                                   </Typography>
