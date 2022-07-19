@@ -40,6 +40,15 @@ const PrettoSlider = styled(Slider)(({theme}) => ({
       },
     },
   }));
+const OutlinedNumberInput = styled('input')(({theme}) => ({
+    border:'1px solid #ececec',
+    boxSizing:'border-box',
+    height:'2em',
+    fontSize:'14px',
+    maxWidth:60,
+    padding:'.46428571em',
+    paddingLeft:'.92857143em'
+}))
 
 const SlideMenu = ({title, max, filters, filterState, handleClose}) => {
   const [value, setValue] = useState(title === 'IELTS' ? filterState.filter.min_ielts : title === 'TOEFL' ? filterState.filter.min_toefl : filterState.filter.min_price === undefined ? [30000,120000] : [filterState.filter.min_price,filterState.filter.max_price])
@@ -129,13 +138,3 @@ const SlideMenu = ({title, max, filters, filterState, handleClose}) => {
 }
 
 export default SlideMenu
-
-const OutlinedNumberInput = styled('input')(({theme}) => ({
-    border:'1px solid #ececec',
-    boxSizing:'border-box',
-    height:'2em',
-    fontSize:'14px',
-    maxWidth:60,
-    padding:'.46428571em',
-    paddingLeft:'.92857143em'
-}))
