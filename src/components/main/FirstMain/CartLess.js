@@ -35,10 +35,10 @@ const CartLess = ({data,bgColor}) => {
                               &&
                               <Grid item md={4} sx={{p:'0 15px'}} container alignItems={'center'} flexDirection={'column'} justifyContent={'center'}>
                                   <Typography variant='customH3' textAlign={'center'} sx={{fontSize:[0,0,'25px','32px']}}>
-                                    {data.type === 'Private' ? 'Private' : data.average_tuition+'TRY'}
+                                    {data.type === 'Private' ? 'Private' : data.average_tuition === null ? 'Public' : data.average_tuition+'TRY'}
                                   </Typography>
                                   <Typography variant='body1' fontFamily={'Averta'} lineHeight='normal' color='#7a7878' letterSpacing={-.2} fontSize={16} sx={{mt:0.375}}>
-                                    {data.type === 'Private' ? 'Type' : 'Tution'}
+                                    {data.type === 'Private' || data.average_tuition === null ? 'Type' : 'Tution'}
                                   </Typography>
                               </Grid>
                           }
