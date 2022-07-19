@@ -6,6 +6,7 @@ const CartLess = ({data,bgColor}) => {
   const theme = useTheme()
   const widthMd = useMediaQuery(theme.breakpoints.up('md'))
   const widthSm = useMediaQuery(theme.breakpoints.up('sm'))
+  console.log(data)
   return (
       <Link to='/' sx={{width:'100%',cursor:'pointer'}}>
           {
