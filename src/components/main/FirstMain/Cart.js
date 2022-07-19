@@ -29,7 +29,7 @@ export default function Cart({data,width = '100%',height = 'auto',marginBottom='
                         {
                             data.province !== undefined
                             ?
-                            (data.province+", "+data.country)
+                            ((data.province !== null ? data.province+", " : "")+data.country)
                             :
                             data.universitiesNumber
                         }
