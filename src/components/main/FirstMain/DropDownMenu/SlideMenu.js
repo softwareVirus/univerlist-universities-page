@@ -40,6 +40,8 @@ const PrettoSlider = styled(Slider)(({theme}) => ({
       },
     },
   }));
+
+
 const OutlinedNumberInput = styled('input')(({theme}) => ({
     border:'1px solid #ececec',
     boxSizing:'border-box',
