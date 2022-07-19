@@ -5,7 +5,6 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 import Grid from '@mui/material/Grid'
 import Cart from '../main/FirstMain/Cart'
 import axios from "axios";
-import CartArticle from "../main/FirstMain/CartArticle";
 import { Button, IconButton, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/system";
 const responsive = {
