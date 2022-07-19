@@ -57,7 +57,7 @@ const CartLess = ({data,bgColor}) => {
                             {data.name}
                         </Typography>
                         <Typography variant='body1' fontFamily={'Averta'} lineHeight='normal' color='#7a7878' letterSpacing={-.2} fontSize={16} sx={{mt:1.875}}>
-                            {(((data.province !== null ? data.province+", " : "")+data.country)}
+                            {((data.province !== null ? data.province+", " : "")+data.country)}
                         </Typography>
                     </Grid>
                 </Grid>
